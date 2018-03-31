@@ -38,7 +38,7 @@
    </target>
    <target name="war" depends="dist">
     <war warfile="${dist}/iris-${DSTAMP}.war" webxml="Webcontent/WEB_INF/web.xml">
-      <fileset dir="Webcontent"/>
+      <!--<fileset dir="Webcontent"/>-->
       <lib dir="${dist}/lib"/>
       <classes dir="${build}"/>
      </war>
