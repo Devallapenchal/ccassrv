@@ -41,5 +41,6 @@
       <fileset dir="Webcontent"/>
       <lib dir="${dist}/lib"/>
       <classes dir="${build}"/>
+     </war>
   </target>
 </project>
