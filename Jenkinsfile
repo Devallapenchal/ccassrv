@@ -11,4 +11,14 @@ node
    env.PATH = "${tool 'Ant'}/bin:${env.PATH}"
    bat 'ant -f build.xml'
   }
+ stage('Build Notification')
+  {
+   emailext ( subject: "STARTED: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]'", attachmentsPattern: "'file:///F:/programs/programs/ccas.html'", body: """
+
+STARTED: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]':
+
+Check console output at "${env.JOB_NAME} [${env.BUILD_NUMBER}]"
+
+""", recipientProviders: [[$class: 'pdeva893@gmail.com']] )
+  }
 }
