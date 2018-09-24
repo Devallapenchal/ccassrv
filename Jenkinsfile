@@ -19,6 +19,6 @@ STARTED: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]':
 
 Check console output at "${env.JOB_NAME} [${env.BUILD_NUMBER}]"
 
-""", from: 'address@xyz.com'recipientProviders: [[$class: 'DevelopersRecipientProvider']], to: 'pdeva893@gmail.com')
+""", to: 'pdeva893@gmail.com')
   }
 }
