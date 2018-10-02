@@ -16,6 +16,6 @@ node
   }
  stage('Build Notification')
   {
-   emailext mimetype:'text/html', body: '${File,'ccas.html'}', subject: 'notification', from: 'pdeva893@gmail.com', to: 'pdeva893@gmail.com'
+   emailext mimetype: 'text/html', body: '${FILE,path="ccas.html"}', subject: 'notification', from: 'pdeva893@gmail.com', to: 'pdeva893@gmail.com'
   }
 }
