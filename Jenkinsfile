@@ -1,6 +1,7 @@
 def workspace
 node
 {
+properties([parameters([choice(choices: ['Dev', 'QA', 'UAT', 'PROD'], description: 'Select any environment for deploy', name: 'Environments'), text(defaultValue: 'CCAS,LGD,LTV,SBL', description: 'select component', name: 'Component'), text(defaultValue: '236645hhh5,236645hhh5,236645hhh5,236645hhh5', description: 'select commit ID', name: 'commit ID')]), pipelineTriggers([])])
   stage('Checkout')
   {
    checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: '62154932-8f6d-49d4-950e-9dcf30b2b0bb', url: 'git@github.com:Devallapenchal/ccassrv.git']]])
