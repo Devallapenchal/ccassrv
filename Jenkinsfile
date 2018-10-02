@@ -22,6 +22,6 @@ STARTED: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]':
 
 Check console output at "${env.JOB_NAME} [${env.BUILD_NUMBER}]"
 
-""", to: 'pdeva893@gmail.com')
+""", from: 'pdeva893@gmail.com', to: 'pdeva893@gmail.com')
   }
 }
