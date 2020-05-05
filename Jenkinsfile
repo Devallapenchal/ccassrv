@@ -5,7 +5,7 @@ node
 {
  stage('Checkout')
   {
-   checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: '62154932-8f6d-49d4-950e-9dcf30b2b0bb', url: 'git@github.com:Devallapenchal/ccassrv.git']]])
+   checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: '74:39:e5:48:d4:b6:f6:c5:aa:58:c9:94:0a:42:a0:5e', url: 'git@github.com:Devallapenchal/ccassrv.git']]])
    workspace =pwd();
    
   }
