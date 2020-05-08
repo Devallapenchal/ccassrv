@@ -13,7 +13,7 @@ node
   {
    env.PATH = "${tool 'Ant'}/bin:${env.PATH}"
    bat 'start cmd.exe /c'
-   bat 'ant -f C:\Users\Hi\.jenkins\workspace\Irisproject\build.xml'
+   bat 'ant -f build.xml'
   }
  stage('Build Notification')
   {
