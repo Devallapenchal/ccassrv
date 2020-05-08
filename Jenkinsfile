@@ -12,7 +12,9 @@ node
   stage('Build')
   {
    env.PATH = "${tool 'Ant'}/bin:${env.PATH}"
-   bat 'ant -f build.xml'
+   bat '''
+   ant -f build.xml
+   '''
   }
  stage('Build Notification')
   {
